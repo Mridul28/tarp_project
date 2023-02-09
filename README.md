@@ -55,6 +55,7 @@ on a CCTV camera. This model was then implemented on a Raspberry Pi using Tensor
 and Keras.
 
 Traffic Density Measurement using Image Processing: An SVM approach [3]
+
 Their system consists of 4 components-
 • Traffic management system
 • Road way system
