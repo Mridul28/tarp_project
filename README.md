@@ -37,11 +37,10 @@ Literature Survey
 ------------------
 Accident Detection System Web Application [1]: 
 
-The paper aims to implement a 4x4 Tic Tac Toe game for 2 players and 1 players. It develops an
+The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
 AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very
-simplistic implementation of the tic tac toe game with not a lot of focus given on the AI to ensure
-that it is not very difficult to play against as it is a game for enjoyment.
-Cooperative Sensing for Improved Traffic Efficiency: 
+simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.
+
 
 Accident Detection using Convolutional Neural Networks [2]
 
