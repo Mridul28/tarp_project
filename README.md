@@ -14,7 +14,7 @@ his/her location details which then are pinned in the google maps. At the time o
 application takes personal information like blood group, name, email etc. If an accident trigger
 occurred, then this information will be accessed by the emergency service centers.
 
-Keywords: Google maps, Internet, Location
+Keywords: Google maps, Internet, Location, service
 
 
 Intoduction
