@@ -35,7 +35,7 @@ including the most unguarded road users, accounting for about 40% of all fatalit
 
 Literature Survey
 ------------------
-# Accident Detection System Web Application [1]: 
+Accident Detection System Web Application [1]: 
 
 The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
 AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very
