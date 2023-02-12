@@ -86,5 +86,8 @@ countdown procedures upon false accident detection.
 Project Workflow
 ------------------
 ![image](https://user-images.githubusercontent.com/72341082/217732531-b8860f84-adba-482d-948b-90bc5a15608a.png)
-![image](https://user-images.githubusercontent.com/72341082/218323549-ed0b285d-aeeb-424e-82c4-bd03d565e1f0.png)
+![image](https://user-images.githubusercontent.com/72341082/218323549-ed0b285d-aeeb-424e-82c4-bd03d565e1f0.png) 
+Analysis - Vineet
+Implementation - Mridul
+
 
