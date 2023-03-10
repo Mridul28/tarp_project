@@ -33,6 +33,11 @@ the age group of 25 to 65 years old in 2010, with pedestrians, bicyclists, and t
 including the most unguarded road users, accounting for about 40% of all fatalities.
 
 
+Motivation
+------------------
+Motivation is a critical aspect of any study as it sets the tone for the research and provides a basis for why the research is important. In the case of studying optimal route detection for combating road accidents, the following are some potential motivating factors:
+1. #High incidence of road accidents: Road accidents are a significant public health concern globally, with millions of people sustaining injuries and losing their lives every year. According to the World Health Organization (WHO), approximately 1.35 million people die each year as a result of road accidents, and tens of millions more are injured.
+2. 
 Literature Survey
 ------------------
 Accident Detection System Web Application [1]: 
