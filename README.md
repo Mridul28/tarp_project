@@ -36,10 +36,15 @@ including the most unguarded road users, accounting for about 40% of all fatalit
 Motivation
 ------------------
 Motivation is a critical aspect of any study as it sets the tone for the research and provides a basis for why the research is important. In the case of studying optimal route detection for combating road accidents, the following are some potential motivating factors:
+
 **1. High incidence of road accidents:** Road accidents are a significant public health concern globally, with millions of people sustaining injuries and losing their lives every year. According to the World Health Organization (WHO), approximately 1.35 million people die each year as a result of road accidents, and tens of millions more are injured.
+
 **2. Economic costs of road accidents:** Road accidents not only result in loss of life and injuries but also have significant economic costs. The WHO estimates that road accidents cost countries up to 3% of their GDP, which includes direct costs such as medical expenses and indirect costs such as lost productivity.
+
 **3. Need for efficient emergency response:** Time is of the essence when it comes to responding to road accidents, and every second counts in saving lives. Therefore, it is crucial to have an efficient emergency response system that can quickly detect the location of an accident and dispatch emergency services to the scene.
+
 **4. Advances in technology:** With advancements in technology, it is now possible to collect and analyze vast amounts of data to identify patterns and trends that can help in combating road accidents. For instance, data from GPS devices and sensors in vehicles can be used to detect road accidents and identify optimal routes for emergency response.
+
 **5. Potential to save lives:** By detecting road accidents and identifying optimal routes for emergency response, it is possible to save lives and reduce the severity of injuries sustained in accidents. This is a significant motivation for studying optimal route detection for combating road accidents as it has the potential to make a real difference in people's lives.
 
 Overall, the above-mentioned factors and many others provide strong motivation for studying optimal route detection for combating road accidents. Through this study, it is possible to develop more efficient emergency response systems that can save lives, reduce injuries, and minimize the economic costs associated with road accidents.
@@ -47,7 +52,7 @@ Overall, the above-mentioned factors and many others provide strong motivation f
 
 Literature Survey
 ------------------
-**Accident Detection System Web Application [1]: **
+**Accident Detection System Web Application [1]**
 
 The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
 AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very
