@@ -145,3 +145,11 @@ Methodology
 Machine  learning methods  showed  great success  at  anomaly detection. In  this study, we considered incidents in normal traffic flow as an anomaly. When accident happens, following cars will slow down or stop, and many cars will be affected from accident. When location data of vehicles are analyzed , it is seen that many cars are collected around accident location. Clustering algorithms can be used to group vehicles according to their speed and location in particular road segment. In accident case, algorithms will put vehicles which is affected by accident in one group, other vehicles in other group or groups.  In our simulations , it has been observed that number of group is increased by 1 at the time of accident and number of vehicles in the new group increased in the following seconds. It can be interpreted as an accident happened and following cars or  cars around  the accident are affected by the accident.
 
 
+References
+-----------------
+
+[[1] Hosne-Al-Walid1, Nafisa Anjum2, Ummenur Tubba3, Lamia Akter4 and Zerin Asfad5 “Traffic 
+Density Measurement using Image Processing: An SVM approach,” International Journal of Innovative 
+Research in Computer and Communication Engineering(An ISO 3297: 2007 Certified Organization)Vol. 
+3, Issue 6, June 2015.](https://www.researchgate.net/profile/Hosne-Al-Walid-Shaiket/publication/329155184_Traffic_Density_Measurement_using_Image_Processing_An_SVM_approach/links/5bf83b08458515a69e3647c5/Traffic-Density-Measurement-using-Image-Processing-An-SVM-approach.pdf)
+
