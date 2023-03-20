@@ -21,11 +21,36 @@
   </p>
 </p>
 
-<p align="center">
-  <a href="https://github.com/[vinit1234singh]/[tarp_project]/releases/"><img alt="" src="" /></a>
-  <a href=""><img alt="" src="" /></a>
-  <a href=""><img alt="" src="" /></a>
-</p>
+_Social buttons_
+
+[![vinit1234singh - tarp_project](https://img.shields.io/static/v1?label=vinit1234singh&message=tarp_project&color=blue&logo=github)](https://github.com/vinit1234singh/tarp_project "Go to GitHub repo")
+[![stars - tarp_project](https://img.shields.io/github/stars/vinit1234singh/tarp_project?style=social)](https://github.com/vinit1234singh/tarp_project)
+[![forks - tarp_project](https://img.shields.io/github/forks/vinit1234singh/tarp_project?style=social)](https://github.com/vinit1234singh/tarp_project)
+
+
+_Repo metadata_
+
+
+[![GitHub tag](https://img.shields.io/github/tag/vinit1234singh/tarp_project?include_prereleases=&sort=semver&color=blue)](https://github.com/vinit1234singh/tarp_project/releases/)
+[![License](https://img.shields.io/badge/License-VIT-blue)](#license)
+[![issues - tarp_project](https://img.shields.io/github/issues/vinit1234singh/tarp_project)](https://github.com/vinit1234singh/tarp_project/issues)
+
+_Call-to-Action buttons_
+
+<div align="center">
+
+
+
+
+
+</div>
+
+
+
+## License
+
+Released under [VIT](/LICENSE) by [@vinit1234singh](https://github.com/vinit1234singh).
+
 
 # Optimal Route Detection for Combating Road Accidents
 Abstract
