@@ -153,3 +153,9 @@ Density Measurement using Image Processing: An SVM approach,” International Jo
 Research in Computer and Communication Engineering(An ISO 3297: 2007 Certified Organization)Vol. 
 3, Issue 6, June 2015.](https://www.researchgate.net/profile/Hosne-Al-Walid-Shaiket/publication/329155184_Traffic_Density_Measurement_using_Image_Processing_An_SVM_approach/links/5bf83b08458515a69e3647c5/Traffic-Density-Measurement-using-Image-Processing-An-SVM-approach.pdf)
 
+[[2] S. Ghosh, S. J. Sunny and R. Roney, "Accident Detection Using Convolutional Neural Networks," 2019 
+International Conference on Data Science and Communication (IconDSC), 2019, pp. 1-6, doi: 
+10.1109/IconDSC.2019.8816881.](https://ieeexplore.ieee.org/abstract/document/8816881)
+
+[[3] Combating Road Traffic Congestion with Big Data: A Bibliometric Review and Analysis of Scientific Research,  Tebogo Makaba, Oluwatobi J. Afolabi & Augustine C. Ajibo , DOI: 10.1007/978-3-030-66042-0_4, 18 June 2021](https://link.springer.com/chapter/10.1007/978-3-030-66042-0_4)
+
