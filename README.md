@@ -47,11 +47,6 @@ _Call-to-Action buttons_
 
 
 
-## License
-
-Released under [VIT](/LICENSE) by [@vinit1234singh](https://github.com/vinit1234singh).
-
-
 # Optimal Route Detection for Combating Road Accidents
 Abstract
 ------------------
