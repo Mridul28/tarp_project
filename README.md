@@ -21,7 +21,7 @@
 
 
 
-[![GitHub tag](https://img.shields.io/github/tag/vinit1234singh/tarp_project?include_prereleases=&sort=semver&color=blue)](https://github.com/vinit1234singh/tarp_project/releases/)
+[![GitHub release](https://img.shields.io/github/release/vinit1234singh/tarp_project?include_prereleases=&sort=semver&color=blue)](https://github.com/vinit1234singh/tarp_project/releases/)
 [![License](https://img.shields.io/badge/License-VIT-blue)](#license)
 [![issues - tarp_project](https://img.shields.io/github/issues/vinit1234singh/tarp_project)](https://github.com/vinit1234singh/tarp_project/issues)
 ![Contributors](https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green)
