@@ -19,7 +19,8 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/vinit1234singh/tarp_project/total) ![Contributors](https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green) ![Issues]
+(https://img.shields.io/github/downloads/vinit1234singh/tarp_project/total) ![Contributors]
+(https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green) ![Issues]
 
 [![GitHub tag](https://img.shields.io/github/tag/vinit1234singh/tarp_project?include_prereleases=&sort=semver&color=blue)](https://github.com/vinit1234singh/tarp_project/releases/)
 [![License](https://img.shields.io/badge/License-VIT-blue)](#license)
