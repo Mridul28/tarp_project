@@ -21,12 +21,11 @@
   </p>
 </p>
 
-![Downloads]
-(https://img.shields.io/github/downloads/vinit1234singh/tarp_project/total) ![Contributors]
-(https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green) ![Issues]
-(https://img.shields.io/github/issues/vinit1234singh/tarp_project) ![License]
-(https://img.shields.io/github/license/vinit1234singh/tarp_project) 
-
+<p align="center">
+  <a href="https://github.com/[vinit1234singh]/[tarp_project]/releases/"><img alt="" src="" /></a>
+  <a href=""><img alt="" src="" /></a>
+  <a href=""><img alt="" src="" /></a>
+</p>
 
 # Optimal Route Detection for Combating Road Accidents
 Abstract
