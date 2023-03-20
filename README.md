@@ -1,3 +1,29 @@
+<br/>
+<p align="center">
+  <a href="https://github.com/vinit1234singh/tarp_project">
+    <img src="https://drive.google.com/file/d/1JyFTh9UJaEejssGZu28msVv8kL-djRUd/view?usp=share_link" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">ORD Combating</h3>
+
+  <p align="center">
+    Optimal Route Detection for Combating Road Accidents
+    <br/>
+    <br/>
+    <a href="https://github.com/vinit1234singh/tarp_project"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://github.com/vinit1234singh/tarp_project">View Demo</a>
+    .
+    <a href="https://github.com/vinit1234singh/tarp_project/issues">Report Bug</a>
+    .
+    <a href="https://github.com/vinit1234singh/tarp_project/issues">Request Feature</a>
+  </p>
+</p>
+
+![Downloads](https://img.shields.io/github/downloads/vinit1234singh/tarp_project/total) ![Contributors](https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green) ![Issues](https://img.shields.io/github/issues/vinit1234singh/tarp_project) ![License](https://img.shields.io/github/license/vinit1234singh/tarp_project) 
+
+
 # Optimal Route Detection for Combating Road Accidents
 Abstract
 ------------------
