@@ -6,6 +6,7 @@
   <h1 align="center">ORD Combating </h1>
   <p align="center">
     Optimal Route Detection for Combating Road Accidents
+ 
     <br/>
     <a href="https://github.com/vinit1234singh/tarp_project"><strong>Explore the docs »</strong></a>
     <br/>
