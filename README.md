@@ -1,12 +1,11 @@
-<br/>
+
 <p align="center">
   <a href="https://github.com/vinit1234singh/tarp_project">
     <img src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc.png" alt="Logo" width="60%" height="200">
   </a>
-  <h3 align="center">ORD Combating</h3>
+  <h1 align="center">ORD Combating </h1>
   <p align="center">
     Optimal Route Detection for Combating Road Accidents
-    <br/>
     <br/>
     <a href="https://github.com/vinit1234singh/tarp_project"><strong>Explore the docs »</strong></a>
     <br/>
