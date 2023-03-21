@@ -159,3 +159,12 @@ International Conference on Data Science and Communication (IconDSC), 2019, pp. 
 
 [[3] Combating Road Traffic Congestion with Big Data: A Bibliometric Review and Analysis of Scientific Research,  Tebogo Makaba, Oluwatobi J. Afolabi & Augustine C. Ajibo , DOI: 10.1007/978-3-030-66042-0_4, 18 June 2021](https://link.springer.com/chapter/10.1007/978-3-030-66042-0_4)
 
+
+Contributors
+----------------
+
+<a href="https://github.com/vinit1234singh/tarp_project/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vinit1234singh/tarp_project" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
