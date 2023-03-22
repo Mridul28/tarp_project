@@ -148,6 +148,16 @@ Machine  learning methods  showed  great success  at  anomaly detection. In  thi
 ![architcture diagram](https://user-images.githubusercontent.com/87689549/226840169-32f7a4cd-5c35-4a2e-9d79-e67b9333b225.PNG)
 
 
+
+Tools Used
+----------------
+
+ - [DBLP Computer Science Biblograhy](https://dblp.org/)
+ - [ZOTERO](https://www.zotero.org/)
+ - [VS Code](https://code.visualstudio.com/)
+ - [PhpMyAdmin](https://www.phpmyadmin.net/)
+ 
+ 
 References
 -----------------
 
@@ -161,6 +171,7 @@ International Conference on Data Science and Communication (IconDSC), 2019, pp. 
 10.1109/IconDSC.2019.8816881.](https://ieeexplore.ieee.org/abstract/document/8816881)
 
 [[3] Combating Road Traffic Congestion with Big Data: A Bibliometric Review and Analysis of Scientific Research,  Tebogo Makaba, Oluwatobi J. Afolabi & Augustine C. Ajibo , DOI: 10.1007/978-3-030-66042-0_4, 18 June 2021](https://link.springer.com/chapter/10.1007/978-3-030-66042-0_4)
+
 
 
 Contributors
