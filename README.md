@@ -157,6 +157,7 @@ Tools Used
  - [VS Code](https://code.visualstudio.com/)
  - [PhpMyAdmin](https://www.phpmyadmin.net/)
  - [VISME](https://my.visme.co/)
+ - [Team Gantt](https://app.teamgantt.com/)
  
  
 Project Plan
