@@ -156,8 +156,18 @@ Tools Used
  - [ZOTERO](https://www.zotero.org/)
  - [VS Code](https://code.visualstudio.com/)
  - [PhpMyAdmin](https://www.phpmyadmin.net/)
+ - [VISME](https://my.visme.co/)
  
  
+Project Plan
+-----------------
+
+![project-planing](https://user-images.githubusercontent.com/87689549/226994104-a0f99b9e-9cbb-407b-9a60-34f6bf66a1c3.PNG)
+
+![gantt](https://user-images.githubusercontent.com/87689549/227003921-ea783f5f-bd57-4693-8047-69e12304d2d4.PNG)
+
+
+
 References
 -----------------
 
