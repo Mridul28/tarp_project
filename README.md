@@ -31,8 +31,8 @@
 
 
 
-<p align="center" style="color:"yellow";"> Optimal Route Detection for Combating Road Accidents
-
+Optimal Route Detection for Combating Road Accidents
+---
 Abstract
 ------------------
 Android phones are widely used due to its features like GPS, Computational ability, internet
