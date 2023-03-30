@@ -31,6 +31,10 @@
 
 # $${\color{yellow}Optimal\space\ Route\space\ Detection\space\ for\space\ Combating\space\ Road\space\ Accidents}$$ 
 -----------------
+## Tech Team :two_men_holding_hands: 
+- Mridul Madnani – 20BDS0191
+- Vinit Kumar Singh – 20BCE2841
+
 Abstract
 ------------------
 Android phones are widely used due to its features like GPS, Computational ability, internet
