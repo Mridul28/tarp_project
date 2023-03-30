@@ -92,9 +92,7 @@ Literature Survey
 ------------------
 |Sr. No |Paper name|Year of publication|Work Done|
 | --- | --- | --- | --- |
-|1|[Accident Detection System Web Application](https://www.semanticscholar.org/paper/ACCIDENT-DETECTION-SYSTEM-APPLICATION-Agrawal-Khinvasara/692e524319095e62782d5c29d5b5c853bb9bf9e5)|2013|*The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
-AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very
-simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*|
+|1|[Accident Detection System Web Application](https://www.semanticscholar.org/paper/ACCIDENT-DETECTION-SYSTEM-APPLICATION-Agrawal-Khinvasara/692e524319095e62782d5c29d5b5c853bb9bf9e5)|2013|*The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*|
 |2|[Accident Detection using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/8816881)|2019|*The main goal is to integrate a system capable of detecting an accident from a video sequence fed
 to it by a camera. The goal is to detect a crash within seconds of it happening by using advanced
 deep learning algorithms that use complex neural networks (CNN or ConvNet) to analyze captured
