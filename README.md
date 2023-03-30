@@ -102,8 +102,10 @@ Literature Survey
 Project Workflow
 ------------------
 ![4b558487-8efd-45bf-aa76-6b8d0c273c1a](https://user-images.githubusercontent.com/72341082/228767939-ee12fcb6-d80e-48da-89d5-e92a52f5e5ee.png)
-![image](https://user-images.githubusercontent.com/72341082/217732531-b8860f84-adba-482d-948b-90bc5a15608a.png)
-![image](https://user-images.githubusercontent.com/72341082/218323549-ed0b285d-aeeb-424e-82c4-bd03d565e1f0.png) 
+
+Development Phases
+------------------
+   ![image](https://user-images.githubusercontent.com/72341082/217732531-b8860f84-adba-482d-948b-90bc5a15608a.png)
 
 
 Methodology
@@ -113,7 +115,6 @@ Machine  learning methods  showed  great success  at  anomaly detection. In  thi
 
 
 ![architcture diagram](https://user-images.githubusercontent.com/87689549/226840169-32f7a4cd-5c35-4a2e-9d79-e67b9333b225.PNG)
-
 
 
 Tools Used
@@ -134,7 +135,7 @@ Project Plan
 
 
 
-Work Distribution
+Work Distribution : Gantt Chart
 -----------------
 ![gantt](https://user-images.githubusercontent.com/87689549/227003921-ea783f5f-bd57-4693-8047-69e12304d2d4.PNG)
 
