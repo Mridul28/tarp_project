@@ -94,25 +94,15 @@ Literature Survey
 | --- | --- | --- | --- |
 |1|[Accident Detection System Web Application](https://www.semanticscholar.org/paper/ACCIDENT-DETECTION-SYSTEM-APPLICATION-Agrawal-Khinvasara/692e524319095e62782d5c29d5b5c853bb9bf9e5)|2013|*The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*|
 |2|[Accident Detection using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/8816881)|2019|*The main goal is to integrate a system capable of detecting an accident from a video sequence fed to it by a camera. The goal is to detect a crash within seconds of it happening by using advanced deep learning algorithms that use complex neural networks (CNN or ConvNet) to analyze captured images from camera-generated video. They have focused on deploying this system on highways where traffic is less dense and timely help to those involved in an accident is rare. In this system,they have a Raspberry Pi 3 B+ Model which acts as a portable and remote computer to be set up on a CCTV camera. This model was then implemented on a Raspberry Pi using TensorFlow, OpenCV and Keras.*|
-|3|[Traffic Density Measurement using Image Processing: An SVM approach](https://www.researchgate.net/publication/281362311_Traffic_Density_Measurement_using_Image_Processing_An_SVM_approach) |2015|Their system consists of 4 components-
-• Traffic management system
-• Road way system
-• MATLAB
-• SVM classifier algorithm V.
-So their proposed system needs the traffic management system, the roadway system. The CCTVs in the road will take the images of the current state of the traffic in roads. The images will be sent to be processed through server. Then the images will go through their proposed systems to detect the traffic density. The SVM classifier will be used to classify data. The process has three phases. First one is the image analysis part, second is the object detecting and counting part and the final part is the result representation using SVM classification algorithm.|
-|4|A Deep Learning Approach to Predict Career Transitions|2018|The authors used deep learning techniques to predict career transitions based on a dataset of job transitions and social network data|More research is needed to validate the accuracy of the approach and to better understand the factors that contribute to career transitions|
+|3|[Traffic Density Measurement using Image Processing: An SVM approach](https://www.researchgate.net/publication/281362311_Traffic_Density_Measurement_using_Image_Processing_An_SVM_approach) |2015|*Their system consists of 4 components- • Traffic management system • Road way system • MATLAB • SVM classifier algorithm V. So their proposed system needs the traffic management system, the roadway system. The CCTVs in the road will take the images of the current state of the traffic in roads. The images will be sent to be processed through server. Then the images will go through their proposed systems to detect the traffic density. The SVM classifier will be used to classify data. The process has three phases. First one is the image analysis part, second is the object detecting and counting part and the final part is the result representation using SVM classification algorithm.*|
+|4|[Accident Detection and Enhancement of Health Services](https://issuu.com/ijsrd/docs/ijsrdv3i80164)|2015|*This paper focuses on building an android application which detects accident automatically as well as sends notification to nearby emergency services like hospital, ambulance, police station along with his personal information. It uses an user defined algorithm for accident detection which uses GPS location and Speed of car for recognizing the accident.*|
 |5|A Comparative Study of Machine Learning Algorithms for Career Prediction|2020|The authors compared several machine learning algorithms for predicting future careers using a dataset of student profiles and their chosen careers.|More research is needed to evaluate the generalizability of these algorithms to different populations and to better understand the factors that influence career choice.|
 
 
 
 
 
-**Accident Detection and Enhancement of Health Services[4]**
 
-This paper focuses on building an android application which detects accident automatically as well
-as sends notification to nearby emergency services like hospital, ambulance, police station along
-with his personal information. It uses an user defined algorithm for accident detection which uses
-GPS location and Speed of car for recognizing the accident.
 
 **Mobile Web application for Automatic Accident Detection and Multimodal Alert[5]**
 
