@@ -5,7 +5,7 @@
   </a>
   <h3 align="center">CSE1901 : Technical Answers for Real World Problems (TARP) </h3>
   <h4 align="center"><i>Winter Semester 2022-23</i></h4><br><br>
-  <!---<p align="center">
+  <p align="center">
     <br/>
     <a href="https://github.com/vinit1234singh/tarp_project"><strong>Explore the docs »</strong></a>
     <br/>
