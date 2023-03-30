@@ -141,6 +141,17 @@ Project Plan
 
 Work Distribution : Gantt Chart
 -----------------
+| Task | Timeline | Contribution |
+ | --- | --- | --- |
+ | Data collection | Week 0-2 | Mridul Madnani |
+| Sorting of data  | Week 2 | Vinit Singh |
+| Data preprocessing | Week 3-5 | Mridul Madnani |
+| Categorization of Data | Week 6 | Vinit Singh |
+| Clustering of data | Week 8 | Mridul Madnani |
+| Chain creation | Week 9 | Vinit Singh |
+| Path prediction | Week 10 | Mridul Madnani |
+| Displaying output | Week 11-12 | Vinit Singh | 
+
 ![gantt](https://user-images.githubusercontent.com/87689549/227003921-ea783f5f-bd57-4693-8047-69e12304d2d4.PNG)
 
 
