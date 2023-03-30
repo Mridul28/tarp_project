@@ -90,6 +90,8 @@ Overall, the above-mentioned factors and many others provide strong motivation f
 
 Literature Survey
 ------------------
+|Sr. No |Paper name|Year of publication|Work Done|Gaps found|
+| --- | --- | --- | --- | --- |
 **[[1] Accident Detection System Web Application](https://www.semanticscholar.org/paper/ACCIDENT-DETECTION-SYSTEM-APPLICATION-Agrawal-Khinvasara/692e524319095e62782d5c29d5b5c853bb9bf9e5)**
 
 *The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
@@ -97,16 +99,16 @@ AI for the single player game using minimax and alpha- beta pruning algorithms. 
 simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*
 
 
-**[[2] Accident Detection using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/8816881) **
+**[[2] Accident Detection using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/8816881)**
 
-The main goal is to integrate a system capable of detecting an accident from a video sequence fed
+*The main goal is to integrate a system capable of detecting an accident from a video sequence fed
 to it by a camera. The goal is to detect a crash within seconds of it happening by using advanced
 deep learning algorithms that use complex neural networks (CNN or ConvNet) to analyze captured
 images from camera-generated video. They have focused on deploying this system on highways
 where traffic is less dense and timely help to those involved in an accident is rare. In this system,
 they have a Raspberry Pi 3 B+ Model which acts as a portable and remote computer to be set up
 on a CCTV camera. This model was then implemented on a Raspberry Pi using TensorFlow, OpenCV
-and Keras.
+and Keras.*
 
 **Traffic Density Measurement using Image Processing: An SVM approach [3]**
 
