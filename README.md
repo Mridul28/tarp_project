@@ -5,8 +5,6 @@
   </a>
   <h3 align="center">TARP Project</h3>
   <p align="center">
-    Optimal Route Detection for Combating Road Accidents
-   <br/>
     <br/>
     <a href="https://github.com/vinit1234singh/tarp_project"><strong>Explore the docs »</strong></a>
     <br/>
