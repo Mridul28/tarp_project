@@ -101,6 +101,7 @@ Literature Survey
 
 Project Workflow
 ------------------
+![4b558487-8efd-45bf-aa76-6b8d0c273c1a](https://user-images.githubusercontent.com/72341082/228767939-ee12fcb6-d80e-48da-89d5-e92a52f5e5ee.png)
 ![image](https://user-images.githubusercontent.com/72341082/217732531-b8860f84-adba-482d-948b-90bc5a15608a.png)
 ![image](https://user-images.githubusercontent.com/72341082/218323549-ed0b285d-aeeb-424e-82c4-bd03d565e1f0.png) 
 
