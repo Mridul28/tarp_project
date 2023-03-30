@@ -4,8 +4,8 @@
     <img src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc.png" alt="Logo"  height="200">
   </a>
   <h3 align="center">CSE1901 : Technical Answers for Real World Problems (TARP) </h3>
-  <h4 align="center"><i>Winter Semester 2022-23</i></h4>
-  <p align="center">
+  <h4 align="center"><i>Winter Semester 2022-23</i></h4><br><br>
+  <!---<p align="center">
     <br/>
     <a href="https://github.com/vinit1234singh/tarp_project"><strong>Explore the docs »</strong></a>
     <br/>
@@ -17,8 +17,7 @@
     <a href="https://github.com/vinit1234singh/tarp_project/issues">Request Feature</a>
   </p>
 </p>
-
-
+-->
 
 [![GitHub release](https://img.shields.io/github/release/vinit1234singh/tarp_project?include_prereleases=&sort=semver&color=blue)](https://github.com/vinit1234singh/tarp_project/releases/)
 [![License](https://img.shields.io/badge/License-VIT-blue)](#license)
@@ -26,11 +25,12 @@
 ![Contributors](https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green)
 
 
+</p><br><br>
 
+<h6>Title : </h6>
 
-
-Optimal Route Detection for Combating Road Accidents
----
+# $${\color{yellow}Optimal\space\ Route\space\ Detection\space\ for\space\ Combating\space\ Road\space\ Accidents}$$ 
+-----------------
 Abstract
 ------------------
 Android phones are widely used due to its features like GPS, Computational ability, internet
