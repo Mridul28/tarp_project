@@ -3,7 +3,7 @@
   <a href="https://github.com/vinit1234singh/tarp_project">
     <img src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc.png" alt="Logo"  height="200">
   </a>
-  <h3 align="center">CSE1901 : Technical Answers for Real World Problems () </h3>
+  <h3 align="center">CSE1901 : Technical Answers for Real World Problems (T) </h3>
   <h4 align="center"><i>Winter Semester 2022-23</i></h4><br><br>
   <!---<p align="center">
     <br/>
