@@ -90,11 +90,11 @@ Overall, the above-mentioned factors and many others provide strong motivation f
 
 Literature Survey
 ------------------
-**Accident Detection System Web Application [1]**
+**[[1] Accident Detection System Web Application](https://www.semanticscholar.org/paper/ACCIDENT-DETECTION-SYSTEM-APPLICATION-Agrawal-Khinvasara/692e524319095e62782d5c29d5b5c853bb9bf9e5)**
 
-The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
+*The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
 AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very
-simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.
+simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*
 
 
 **Accident Detection using Convolutional Neural Networks [2]**
