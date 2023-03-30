@@ -242,7 +242,7 @@ International Conference on Data Science and Communication (IconDSC), 2019, pp. 
 
 [[3] Combating Road Traffic Congestion with Big Data: A Bibliometric Review and Analysis of Scientific Research,  Tebogo Makaba, Oluwatobi J. Afolabi & Augustine C. Ajibo , DOI: 10.1007/978-3-030-66042-0_4, 18 June 2021](https://link.springer.com/chapter/10.1007/978-3-030-66042-0_4)
 
-
+[4] https://towardsdatascience.com/live-prediction-of-traffic-accident-risks-using-machine-learning-and-google-maps-d2eeffb9389e
 
 Contributors
 ----------------
