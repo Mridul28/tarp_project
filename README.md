@@ -28,7 +28,7 @@
 
 <h6>Title : </h6>
 
-# $${\color{orange}Optimal\space\ Route\space\ Detection\space\ for\space\ Combating\space\ Road\space\ Accidents}$$
+# *$${\color{orange}Optimal\space\ Route\space\ Detection\space\ for\space\ Combating\space\ Road\space\ Accidents}$$*
 -----------------
 
 ## *Tech Team :two_men_holding_hands:* 
