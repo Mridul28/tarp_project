@@ -27,7 +27,7 @@
 ![Contributors](https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green)
 
 <div align="center">
-</div>
+
 
 
 
