@@ -219,6 +219,8 @@ Scalability: MySQL is designed to handle large volumes of data, making it a good
 
 ## Evaluation Metrics:
 Through this algorithm the users will be able to detect optimal path for ease in combating road accidents by analyzing the dataset and real-time analysis. Based on previous research studies, the following algorithms proved to be most effective:
+
+
 ![image](https://user-images.githubusercontent.com/72341082/228778599-705251c9-58ce-4368-b6b7-9595c3e45c07.png)
 
 
