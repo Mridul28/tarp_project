@@ -116,6 +116,10 @@ Machine  learning methods  showed  great success  at  anomaly detection. In  thi
 
 ![architcture diagram](https://user-images.githubusercontent.com/87689549/226840169-32f7a4cd-5c35-4a2e-9d79-e67b9333b225.PNG)
 
+Database Used
+----------------
+
+
 
 Tools Used
 ----------------
@@ -163,8 +167,6 @@ Contributors
   <img src="https://contrib.rocks/image?repo=vinit1234singh/tarp_project" />
 </a>
 
-
-![contributor]
 
 
 
