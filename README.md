@@ -116,11 +116,6 @@ Machine  learning methods  showed  great success  at  anomaly detection. In  thi
 
 ![architcture diagram](https://user-images.githubusercontent.com/87689549/226840169-32f7a4cd-5c35-4a2e-9d79-e67b9333b225.PNG)
 
-Database Used
-----------------
-
-
-
 Tools Used
 ----------------
 
@@ -153,6 +148,81 @@ Work Distribution : Gantt Chart
 | Displaying output | Week 11-12 | Vinit Singh | 
 
 ![gantt](https://user-images.githubusercontent.com/87689549/227003921-ea783f5f-bd57-4693-8047-69e12304d2d4.PNG)
+
+
+## Data collection: 
+We aim to collect data from myriad sources like educational institutions, known universities, offices, workplaces, and startups. We do this by mailing people working or studying. We will also be contacting the institution or the HR department of a company. In addition to all these data, we will be taking the linkedIn dataset, which holds the entire details of people’s current job profile and their future goal.
+### Dataset link: https://www.kaggle.com/datasets/stackoverflow/stack-overflow-2018-developer-survey
+The data belongs to a kaggle survey, we slectedthis datset because of its varied number of columns, prefrences and easy work flow.
+## Sorting of data:
+The data that we aggregate from various resources needs to be sorted based on multiple factors, like the degree that needs to be completed before, or is a prerequisite for the other. Also the data of the universities also needs to be sorted, based on ranking, scholarships and other features. This sorting of data can be done by making use of various algorithms like quick sort or merge sort, depending on which one is more efficient and time saving on our data.
+## Data preprocessing:
+The obtained data from the workplace may not be large enough to represent a big dataset. We need to oversample the data in order to avoid skewing of the result. We try to achieve this by kMeans Smote and SVM Smote.
+## Categorization of Data:
+The data that we acquire from the user and from the universities or offices, needs to be categorized, into different streams like Engineering, Medical and Commerce. We categorize the users’ needs and the external data to ensure accurate mapping. We make use of clustering algorithms, like KNN clustering or BIRCH clustering method to put similar attributes under one category
+## Clustering of data:
+After gathering a comprehensive dataset having many educational qualifications/degrees, job titles/job posts, we need to group them for better understanding. For example, software development engineer, software developer, programmer all can be grouped as "software engineer". We try accomplishing this by using the KNN algorithm.
+## Chain creation:
+after we have categorized our data, and mapped the users details with that of the universities or offices, next we need to form a chain, which will give a direct path. This path begins from your current position and searches in your category and gives you the path to reach your aspired job. We can make use of features like Markov chaining. This process will provide as many chains or paths as possible to reach your goal.
+## Path prediction:
+Markov chaining provides various chains that can be followed, out of all these provided chains, the chain which is most suitable and shortest is chosen and displayed to the user. The choosing of the shortest chain is done with the help of bellman Ford algorithm, this algorithm will help us in finding the shortest path among the many paths which we get as output from the chaining process.
+## Displaying output:
+Finally, after the optimal and shortest path is chosen, this path along with the relevant details needs to be displayed in an engaging way to the user, we can display this output in a website which can be integrated with the machine learning and dataset. We can integrate python code with website using flask, and the database can be integrated by making use of mongoDB and NodeJS. The front end of the website can be prepared with the help of ReactJS.
+ 
+# Functional Requirements:writing_hand:
+### System requirements
+| Specifications | Minimum or recommended requirements |
+| --- | --- |
+| Processor | •	Intel Core i5-9400F Processor onwards <br/> •	AMD Ryzen 5 3500X Processor onwards <br/> •	Minimum Frequency rate should be 1GHz <br/> •	Recommended 2GHz |
+| Network | •	Ethernet Connection (LAN) <br/> •	Wireless adapter(Wi-Fi) <br/> |
+| Hard Disk | •	Recommended type - HDD <br/> •	Minimum 16GB <br/> •	Recommended 32GB |
+|	Memory (RAM) | •	Memory (RAM)|
+### Tools/Software Used
+| SPecifications | Requirements |
+| --- | --- |
+| Operating System | •	Windows – 7 or newer </br> •	MAC – OS X v10.7 or newer </br> •	 Ubuntu - 17.04 |
+| Python | •	Anaconda </br> •	Jupyter Notebook |
+| Database | •	MySql |
+| Framework | •	Flask |
+
+### Description of tools used
+
+### Python 
+Python would our language of coding. We have chose python as for machine learning approaches, python has many libraries like numpy and pandas which can help in exploratory data analysis, data configuring, cleaning, pre-processing, model fitting and finally evaluation. Python interface is also user friendly. It allows us to write more and code less. 
+
+Anaconda is a popular data science platform that comes with a suite of tools for scientific computing and data analysis, including Python, Jupyter Notebook, and many other libraries and packages. Jupyter Notebook is an interactive web-based tool that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
+
+- Easy installation and setup: Anaconda makes it easy to install and manage Python and other data science libraries and packages. Once installed, you can launch Jupyter Notebook from the Anaconda Navigator, which is a graphical user interface that provides easy access to all the tools and packages included in Anaconda.
+
+- Interactive computing: Jupyter Notebook allows you to interactively explore and analyze data using Python. You can write and execute code, visualize data, and create interactive plots and charts, all within the same document.
+
+- Reproducibility: Jupyter Notebook documents are fully reproducible, meaning you can easily share your analysis with others and they can reproduce your results by running the same code.
+
+- Collaboration: Jupyter Notebook documents can be easily shared with others and can be edited collaboratively in real-time, making it easy to work together on data analysis projects.
+
+- Large community and support: Python has a large and active community of users, developers, and contributors who provide support, documentation, and a wide range of libraries and packages for data science and machine learning.
+
+
+### MySql 
+MySql could be a good choice for storing and using alumni data because of its features like - 
+Scalability: MySQL is designed to handle large volumes of data, making it a good choice for storing alumni data as universities typically have a large number of alumni.
+
+- Reliability: MySQL is known for its stability and reliability, with a proven track record of being used by large organizations to manage critical data.
+
+- Flexibility: MySQL can be used for a wide range of applications and can be customized to meet the specific needs of a university's alumni data management system.
+
+- Security: MySQL has built-in security features, such as user authentication and encryption, to protect sensitive alumni data.
+
+- Integration: MySQL can be easily integrated with other software systems, such as web applications or reporting tools, to create a seamless and efficient alumni data management system.
+
+
+
+## Evaluation Metrics:
+In the research paper "A machine learning approach for future planning", an algorithm is devised which gives the most optimal chain to choose the correct career path based on the current qualifications and aspiring job, but this paper does not provide guidance on how each of these steps are to be followed, the user of the algorithm will have to collect information from different websites to clear their doubts.
+The algorithm devised in this study gives the users a one stop destination, after which the users will not have to search for further information about degree requirements, college rankings, scholarships, and fees.
+This will ease the process of future planning and will create a proper guide for the users. 
+Demonstration
+-----------------
 
 
 References
