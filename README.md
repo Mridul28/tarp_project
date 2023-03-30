@@ -97,7 +97,7 @@ AI for the single player game using minimax and alpha- beta pruning algorithms. 
 simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*
 
 
-**Accident Detection using Convolutional Neural Networks [2]**
+**[[2] Accident Detection using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/8816881) **
 
 The main goal is to integrate a system capable of detecting an accident from a video sequence fed
 to it by a camera. The goal is to detect a crash within seconds of it happening by using advanced
