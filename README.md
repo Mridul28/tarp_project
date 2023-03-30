@@ -90,18 +90,12 @@ Overall, the above-mentioned factors and many others provide strong motivation f
 
 Literature Survey
 ------------------
-|Sr. No |Paper name|Year of publication|Work Done|Gaps found|
-| --- | --- | --- | --- | --- |
-**[[1] Accident Detection System Web Application](https://www.semanticscholar.org/paper/ACCIDENT-DETECTION-SYSTEM-APPLICATION-Agrawal-Khinvasara/692e524319095e62782d5c29d5b5c853bb9bf9e5)**
-
-*The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
+|Sr. No |Paper name|Year of publication|Work Done|
+| --- | --- | --- | --- |
+|1|[Accident Detection System Web Application](https://www.semanticscholar.org/paper/ACCIDENT-DETECTION-SYSTEM-APPLICATION-Agrawal-Khinvasara/692e524319095e62782d5c29d5b5c853bb9bf9e5)|2013|*The paper aims to implement a Cooperative Sensing for Improved Traffic Efficiency. It develops an
 AI for the single player game using minimax and alpha- beta pruning algorithms. It has a very
-simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*
-
-
-**[[2] Accident Detection using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/8816881)**
-
-*The main goal is to integrate a system capable of detecting an accident from a video sequence fed
+simplistic implementation of the Traffic sensing with not a lot of focus given on the AI.*|
+|2|[Accident Detection using Convolutional Neural Networks](https://ieeexplore.ieee.org/document/8816881)|2019|*The main goal is to integrate a system capable of detecting an accident from a video sequence fed
 to it by a camera. The goal is to detect a crash within seconds of it happening by using advanced
 deep learning algorithms that use complex neural networks (CNN or ConvNet) to analyze captured
 images from camera-generated video. They have focused on deploying this system on highways
@@ -109,6 +103,11 @@ where traffic is less dense and timely help to those involved in an accident is 
 they have a Raspberry Pi 3 B+ Model which acts as a portable and remote computer to be set up
 on a CCTV camera. This model was then implemented on a Raspberry Pi using TensorFlow, OpenCV
 and Keras.*
+|
+|3|Intelligent Career Planning System based on Machine Learning and Ontology|2019|The authors developed an intelligent career planning system based on machine learning and ontology that considers a user's interests, skills, and job requirements|The system's accuracy may be limited by the quality and completeness of the user data and the lack of data on alternative career paths|
+|4|A Deep Learning Approach to Predict Career Transitions|2018|The authors used deep learning techniques to predict career transitions based on a dataset of job transitions and social network data|More research is needed to validate the accuracy of the approach and to better understand the factors that contribute to career transitions|
+|5|A Comparative Study of Machine Learning Algorithms for Career Prediction|2020|The authors compared several machine learning algorithms for predicting future careers using a dataset of student profiles and their chosen careers.|More research is needed to evaluate the generalizability of these algorithms to different populations and to better understand the factors that influence career choice.|
+
 
 **Traffic Density Measurement using Image Processing: An SVM approach [3]**
 
