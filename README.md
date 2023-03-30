@@ -31,9 +31,11 @@
 
 # $${\color{yellow}Optimal\space\ Route\space\ Detection\space\ for\space\ Combating\space\ Road\space\ Accidents}$$
 -----------------
+
 ## *Tech Team :two_men_holding_hands:* 
 - Mridul Madnani – 20BDS0191
 - Vinit Kumar Singh – 20BCE2841
+
 
 Abstract
 ------------------
@@ -50,7 +52,7 @@ his/her location details which then are pinned in the google maps. At the time o
 application takes personal information like blood group, name, email etc. If an accident trigger
 occurred, then this information will be accessed by the emergency service centers.
 
-**Keywords:** Google maps, Internet, Location, service
+*Keywords:* Google maps, Internet, Location, Service
 
 
 Intoduction
