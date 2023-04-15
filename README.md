@@ -306,7 +306,7 @@ plt.xlabel('Accident Severity')
 plt.ylabel('Frequency [%]')
 plt.show()
 ```
-OUT[3] 
+
 ![image](https://user-images.githubusercontent.com/87689549/232219518-7130ad5b-1ddf-42a5-b70b-37b861579006.png)
 
 
@@ -321,6 +321,78 @@ print(df.shape)
 ```
 
 OUT[4] (617522, 57)
+
+```python
+#Distribution of sample data by targets
+ax = sns.countplot(x = df.Accident_Severity ,palette="Set2")
+sns.set(font_scale=1.5)
+ax.set_xlabel(' ')
+ax.set_ylabel(' ')
+fig = plt.gcf()
+fig.set_size_inches(8,4)
+for p in ax.patches:
+    ax.annotate('{:.2f}%'.format(100*p.get_height()/len(df.Accident_Severity)), (p.get_x()+ 0.3, p.get_height()+10000))
+
+plt.title('Distribution of 600K Targets',)
+plt.xlabel('Accident Severity')
+plt.ylabel('Frequency [%]')
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232221025-ccf8983c-6226-41eb-92d9-ac4f33a96da4.png)
+
+#### 2.3 Check for missing values (NaN)
+###### some will be filled, some will get omitted
+```python
+#Missing values for each column
+null_count = df.isnull().sum()
+null_count[null_count>0]#.plot('bar', figsize=(30,10))
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232221375-558d5d2f-5693-4d15-bbaa-bc6e1ac41704.png)
+
+#### 2.4 Exploratory Visualization2.4 Exploratory Visualization
+###### Age of Vehicle
+
+```python
+(df.Age_of_Vehicle
+ .value_counts()
+ .plot(title = "Age of Vehicle", 
+       logx = True, 
+       figsize=(14,5)))
+
+print('Min:',    df.Age_of_Vehicle.min(), '\n'
+      'Max:',    df.Age_of_Vehicle.max(), '\n'
+      'Median:', df.Age_of_Vehicle.median())
+```
+Min: 1.0 
+Max: 111.0 
+Median: 7.0
+
+![image](https://user-images.githubusercontent.com/87689549/232221912-5c54811c-aed0-4904-a553-7286e0a71c84.png)
+
+###### Engine capacity feature
+```python
+(df['Engine_Capacity_.CC.']
+ .plot('hist',
+       bins = 1000,
+       title = "Engine Capacity", 
+       figsize=(14,5),
+       logx = True
+      ))
+
+print('Min:',    df['Engine_Capacity_.CC.'].min(), '\n'
+      'Max:',    df['Engine_Capacity_.CC.'].max(), '\n'
+      'Median:', df['Engine_Capacity_.CC.'].median())
+```
+
+Min: 1.0 
+Max: 91000.0 
+Median: 1598.0
+
+![image](https://user-images.githubusercontent.com/87689549/232222317-8e629bc1-2a33-4243-8871-bd49a79c3a83.png)
+
+
 
 ## Evaluation Metrics:
 Through this algorithm the users will be able to detect optimal path for ease in combating road accidents by analyzing the dataset and real-time analysis. Based on previous research studies, the following algorithms proved to be most effective:
