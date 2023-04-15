@@ -98,6 +98,25 @@ Literature Survey
 |5|[Mobile Web application for Automatic Accident Detection and Multimodal Alert](https://ieeexplore.ieee.org/document/7145935)|2020|*The proposed accident detection algorithm receives inputs from the vehicle, via ODB-II, and from the smartphone sensors, namely the accelerometer, the magnetometer and the gyroscope. The Android smartphone is also used as human machine interface, so that the driver can configure the application, receive road hazard warnings issued by other vehicles in the vicinity and cancel countdown procedures upon false accident detection.*|
 
 
+Research Gap
+------------------
+There are several research gaps in the area of optimizing routes for road safety using traffic density analysis and machine learning, including:
+
+1. Lack of standardized data: There is a lack of standardized data on traffic density, road conditions, and accident history, which makes it difficult to develop accurate predictive models.
+
+2. Limited application: The use of machine learning for optimizing road safety is still limited, with few real-world applications. There is a need to test the effectiveness of these methods in different contexts and environments.
+
+3. Limited interpretability: Machine learning models can be difficult to interpret, and it is important to ensure that the models developed are transparent and can be easily understood by users.
+
+4. Limited focus on vulnerable road users: Most studies on optimizing routes for road safety using traffic density analysis and machine learning focus on improving safety for drivers, but there is a need to consider the safety of vulnerable road users such as pedestrians and cyclists.
+
+5. Lack of consideration for other factors: The optimization of routes for road safety should not only consider traffic density and accident history but also take into account other factors such as road design, weather conditions, and driver behavior.
+
+6. Limited evaluation of economic impacts: There is a need to evaluate the economic impacts of implementing road safety optimization measures using machine learning, such as the cost-effectiveness of different interventions.
+
+Addressing these research gaps can help advance the development and application of machine learning methods for optimizing routes for road safety, ultimately leading to safer roads and fewer accidents.
+
+
 Project Workflow
 ------------------
 ![4b558487-8efd-45bf-aa76-6b8d0c273c1a](https://user-images.githubusercontent.com/72341082/228767939-ee12fcb6-d80e-48da-89d5-e92a52f5e5ee.png)
@@ -112,7 +131,6 @@ Methodology
 
 Machine  learning methods  showed  great success  at  anomaly detection. In  this study, we have considered incidents in normal traffic flow as an anomaly. When accident happens, following cars will slow down or stop, and many cars will be affected from accident. When location data of vehicles are analyzed , it is seen that many cars are collected around accident location. Clustering algorithms can be used to group vehicles according to their speed and location in particular road segment. In accident case, algorithms will put vehicles which is affected by accident in one group, other vehicles in other group or groups.  In our simulations , it has been observed that number of group is increased by 1 at the time of accident and number of vehicles in the new group increased in the following seconds. It can be interpreted as an accident happened and following cars or  cars around  the accident are affected by the accident.
 <br>
-
 Proposed methodology for optimizing routes for road safety using traffic density analysis and machine learning:
 
 1. Data collection: Traffic data will be collected using sensors, cameras, and other devices placed on the roads. The data will include information about traffic volume, speed, and congestion levels.
@@ -131,6 +149,8 @@ Proposed methodology for optimizing routes for road safety using traffic density
 
 
 ![architcture diagram](https://user-images.githubusercontent.com/87689549/226840169-32f7a4cd-5c35-4a2e-9d79-e67b9333b225.PNG)
+
+![mermaid-diagram-2023-04-15-222206](https://user-images.githubusercontent.com/87689549/232239295-f27dc0a3-271a-4049-ae93-d7b1cd1ac98d.png)
 
 Tools Used
 ----------------
