@@ -131,6 +131,8 @@ Proposed methodology for optimizing routes for road safety using traffic density
 
 ![mermaid-diagram-2023-04-15-222206](https://user-images.githubusercontent.com/87689549/232239295-f27dc0a3-271a-4049-ae93-d7b1cd1ac98d.png)
 
+
+
 Tools Used
 ----------------
 
