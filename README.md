@@ -217,8 +217,8 @@ Scalability: MySQL is designed to handle large volumes of data, making it a good
 
 
 
-##Implementation
-###1. Introduction
+## Implementation
+### 1. Introduction
 The data come from the Open Data website of the UK government, where they have been published by the Department of Transport.
 
 The dataset comprises of two csv files:
@@ -267,8 +267,8 @@ import os
 print(os.listdir("../input"))
 ```
 
-###2. Data Preparation
-####2.1 Load Data
+### 2. Data Preparation
+#### 2.1 Load Data
 
 ```python
 #Load Data and encode to latin
