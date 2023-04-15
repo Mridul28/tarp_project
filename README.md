@@ -1,4 +1,3 @@
-Readme.md file link : [Readme.md](https://github.com/vinit1234singh/tarp_project/blob/main/README.md)
 <br/>
 <p align="center">
   <a href="https://github.com/vinit1234singh/tarp_project">
