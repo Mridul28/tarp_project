@@ -152,7 +152,7 @@ Work Distribution : Gantt Chart
 
 ## Data collection: 
 The main data set we used for this project was a detailed accident record published by the UK government and hosted on Kaggle. This data set contains details about 1.6 million traffic accidents that took place in the UK between 2000 and 2014. It consists of 33 columns which capture details such as the location, time, severity of the accidents as well as various meteorological and traffic backdrops. In this project, we restricted ourselves to analyzing traffic accidents in Greater London between 2012 and 2014.
-### Dataset link: https://www.kaggle.com/datasets/daveianhickey/2000-16-traffic-flow-england-scotland-wales/versions/8
+### Dataset link: https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles?select=Accident_Information.csv
 The data belongs to a kaggle survey, we slected this datset because of its varied number of columns, prefrences and easy work flow.
 
 
