@@ -740,20 +740,36 @@ Through this algorithm the users will be able to detect optimal path for ease in
 
 This method has produced encouraging results. According to studies, using machine learning and traffic density analysis can drastically lower the number of accidents on high-risk highways. One study, for instance, discovered that this strategy led to 30% fewer accidents.
 
-
 Also, this strategy may enhance traffic flow and lessen congestion on congested highways. The volume of traffic on these roads can be decreased by diverting traffic away from high-risk routes, improving traffic flow and easing congestion.
 
 This strategy does have some drawbacks, though. Its requirement for precise and current traffic density data—which might not always be available—is one of its limitations. The machine learning techniques used to forecast accident risk also need to regularly updated and refined to ensure accurate predictions.
 
+The figure shows the visualization of accidents and its severity analysed and described from the dataset.
+![image](https://user-images.githubusercontent.com/72341082/232240291-dc2b6753-d7c3-44bf-89b6-eee38046bbd7.png)
 
+This is the classification report of logistic regression model which is used within our implementation of Optimal Route Detecting model with depiction of f1 scores, precision and recall.
+![image](https://user-images.githubusercontent.com/72341082/232240338-36b05a50-5287-4afb-8ef4-3cb9c75751f3.png)
 
+This is the classification report of Random Forest Classifier model which is used within our implementation of Optimal Route Detecting model with depiction of f1 scores, precision and recall.
+![image](https://user-images.githubusercontent.com/72341082/232240377-f83a0303-cefc-4717-96f7-906c26f5f7c9.png)
+
+The Visualization below is the HeatMap representation of various features present within our dataset for ease of users to identify the important model features.
+![image](https://user-images.githubusercontent.com/72341082/232240427-5540947d-e329-46a2-849f-c7ea918249e7.png)
+
+The chart below depicts the severity of accidents in accordance with our dataset.
+![image](https://user-images.githubusercontent.com/72341082/232240484-6e7272a1-8ba2-464a-b73a-c8b023c9008e.png)
+
+Through the table below we can see that Random Forest proved to be the most efficient algorithms in with respect to accuracy in finding the optimal path using traffic density analysis among the other machine learning algorithms.
 ![image](https://user-images.githubusercontent.com/72341082/228778599-705251c9-58ce-4368-b6b7-9595c3e45c07.png)
+
 
 
 Demonstration
 -----------------
 
 [Vedio Demo](https://drive.google.com/drive/folders/1_hG8Ro-ZCRSEFjXUoWQtlYEyEdvo3e75)
+
+This is a live demonstration of working of our model through connection of model to GUI APIs which can help in physical structuring of our model for optimizing route detection task using traffic density analysis.
 
 ![1_U3GPUb0dUheOr4wb83q6Bw (1)](https://user-images.githubusercontent.com/72341082/228783144-32ac861e-a179-4510-aa89-23192610baa6.gif)
 
