@@ -745,21 +745,27 @@ Also, this strategy may enhance traffic flow and lessen congestion on congested 
 This strategy does have some drawbacks, though. Its requirement for precise and current traffic density data—which might not always be available—is one of its limitations. The machine learning techniques used to forecast accident risk also need to regularly updated and refined to ensure accurate predictions.
 
 The figure shows the visualization of accidents and its severity analysed and described from the dataset.
+
 ![image](https://user-images.githubusercontent.com/72341082/232240291-dc2b6753-d7c3-44bf-89b6-eee38046bbd7.png)
 
 This is the classification report of logistic regression model which is used within our implementation of Optimal Route Detecting model with depiction of f1 scores, precision and recall.
+
 ![image](https://user-images.githubusercontent.com/72341082/232240338-36b05a50-5287-4afb-8ef4-3cb9c75751f3.png)
 
 This is the classification report of Random Forest Classifier model which is used within our implementation of Optimal Route Detecting model with depiction of f1 scores, precision and recall.
+
 ![image](https://user-images.githubusercontent.com/72341082/232240377-f83a0303-cefc-4717-96f7-906c26f5f7c9.png)
 
 The Visualization below is the HeatMap representation of various features present within our dataset for ease of users to identify the important model features.
+
 ![image](https://user-images.githubusercontent.com/72341082/232240427-5540947d-e329-46a2-849f-c7ea918249e7.png)
 
 The chart below depicts the severity of accidents in accordance with our dataset.
+
 ![image](https://user-images.githubusercontent.com/72341082/232240484-6e7272a1-8ba2-464a-b73a-c8b023c9008e.png)
 
 Through the table below we can see that Random Forest proved to be the most efficient algorithms in with respect to accuracy in finding the optimal path using traffic density analysis among the other machine learning algorithms.
+
 ![image](https://user-images.githubusercontent.com/72341082/228778599-705251c9-58ce-4368-b6b7-9595c3e45c07.png)
 
 
