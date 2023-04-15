@@ -634,6 +634,73 @@ print('Score:',roc_auc_score(y_test.values, RandomForest_Full_Estimator.predict_
 ![image](https://user-images.githubusercontent.com/87689549/232224151-49a60b9c-ae90-496c-b7ba-21d138225af5.png)
 
 
+## Data Visual
+
+```python
+corr =  accidents.corr()
+plt.subplots(figsize=(20,9))
+sns.heatmap(corr, cmap="flare")
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232224887-e19e8c50-7d53-450e-a21e-2004626bf298.png)
+
+
+## Plotting the Dataframe
+```python
+# assign the data
+fatal   = accidents.Accident_Severity.value_counts()['Fatal']
+serious = accidents.Accident_Severity.value_counts()['Serious']
+slight  = accidents.Accident_Severity.value_counts()['Slight']
+
+names = ['Fatal Accidents','Serious Accidents', 'Slight Accidents']
+size  = [fatal, serious, slight]
+
+# create a pie chart
+plt.pie(x=size, labels=names, colors=['b', 'darkblue', 'dodgerblue'], 
+        autopct='%1.2f%%', pctdistance=0.6, textprops=dict(fontweight='bold'),
+        wedgeprops={'linewidth':7, 'edgecolor':'white'})
+
+# create circle for the center of the plot to make the pie look like a donut
+my_circle = plt.Circle((0,0), 0.6, color='white')
+
+# plot the donut chart
+fig = plt.gcf()
+fig.set_size_inches(8,8)
+fig.gca().add_artist(my_circle)
+plt.title('\nAccident Severity: Share in % (2013-2017)', fontsize=14, fontweight='bold')
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232225045-31cecc5b-4070-418b-b665-dcb09398c4fb.png)
+
+## Creating the map for optimization
+
+```python
+most_crashes = df[['Latitude','Longitude']].value_counts().head(1000)
+most_crashes_df = most_crashes.reset_index()
+max_accidents = most_crashes_df[0].max()
+# Uses lat then lon. The bigger the zoom number, the closer in you get
+map = folium.Map(location=[x_mean,y_mean],
+                    zoom_start = 7)
+
+for key,value in most_crashes.iteritems():
+    point = [key[0],key[1]]
+    radius_val = ((value / max_accidents) ** 2) * 6
+    
+    folium.CircleMarker(point
+                    ,radius=radius_val
+                    ,color="blue"
+                    ,weight= value/max_accidents
+                    ,fill=True
+                    ,fill_color="red"
+                    ,fill_opacity=1
+                    ,popup=f'{value} Accidents Occured'
+                   ).add_to(map)
+map # Calls the map to display
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232225153-944a440a-6099-4981-908a-aa1dd15696c3.png)
+
 
 ## Evaluation Metrics:
 Through this algorithm the users will be able to detect optimal path for ease in combating road accidents by analyzing the dataset and real-time analysis. Based on previous research studies, the following algorithms proved to be most effective:
