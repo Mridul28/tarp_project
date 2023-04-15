@@ -266,6 +266,7 @@ For example, running this (by clicking run or pressing Shift+Enter) will list th
 import os
 print(os.listdir("../input"))
 ```
+OUT[1]   ['Vehicle_Information.csv', 'Accident_Information.csv']
 
 ### 2. Data Preparation
 #### 2.1 Load Data
@@ -282,8 +283,44 @@ df = pd.merge(veh, acc, how = 'inner', on = 'Accident_Index')
 print(df.shape)
 df.head()
 ```
+OUT[2] (2058408, 57)
 
 
+#### 2.2 Sample the data
+by reducing rows with Slight Accident Severity
+
+
+```python
+#Distribution of original data by targets
+ax = sns.countplot(x = df.Accident_Severity ,palette="Set2")
+sns.set(font_scale=1)
+ax.set_xlabel(' ')
+ax.set_ylabel(' ')
+fig = plt.gcf()
+fig.set_size_inches(8,4)
+for p in ax.patches:
+    ax.annotate('{:.2f}%'.format(100*p.get_height()/len(df.Accident_Severity)), (p.get_x()+ 0.3, p.get_height()+10000))
+
+plt.title('Distribution of 2 Million Targets',)
+plt.xlabel('Accident Severity')
+plt.ylabel('Frequency [%]')
+plt.show()
+```
+OUT[3] 
+![image](https://user-images.githubusercontent.com/87689549/232219518-7130ad5b-1ddf-42a5-b70b-37b861579006.png)
+
+
+```python
+# Creating weights that are opposite to the weights of target
+weights = np.where(df['Accident_Severity'] == 'Slight', .2, .8)
+
+#Sampling only 30% of the data with new weights  
+df = df.sample(frac=0.3, replace=True, weights=weights)
+print(df.shape)
+#df.Accident_Severity.value_counts(normalize=True)
+```
+
+OUT[4] (617522, 57)
 
 ## Evaluation Metrics:
 Through this algorithm the users will be able to detect optimal path for ease in combating road accidents by analyzing the dataset and real-time analysis. Based on previous research studies, the following algorithms proved to be most effective:
