@@ -611,8 +611,15 @@ print('Score:',roc_auc_score(y_test.values, LogisticRegression_Full_Estimator.pr
 
 ![image](https://user-images.githubusercontent.com/87689549/232224075-a6c16ef8-210f-4247-865a-645889758bbf.png)
 
-#RandomForest_Full_Estimator.fit(X[:5000], y[:5000])
+### Random Forest Classifier
 ```python
+RandomForest_Full_Estimator = Pipeline([
+                                        ("Feature_Engineering", FeatureUnionTransformer),
+                                        ("Min_Max_Transformer", MaxAbsScaler()),
+                                        ("Clf",                 RandomForestClassifier(n_estimators=100, n_jobs=3))
+                                       ])
+
+#RandomForest_Full_Estimator.fit(X[:5000], y[:5000])
 %%time
 
 RandomForest_Full_Estimator.fit(X_train, y_train)
@@ -622,6 +629,7 @@ RandomForest_Full_Estimator.predict(X_test)
 print('Classification Report:' '\n',
       classification_report(y_test, RandomForest_Full_Estimator.predict(X_test)))
 print('Score:',roc_auc_score(y_test.values, RandomForest_Full_Estimator.predict_proba(X_test)[:, 1]))
+```
 
 ![image](https://user-images.githubusercontent.com/87689549/232224151-49a60b9c-ae90-496c-b7ba-21d138225af5.png)
 
