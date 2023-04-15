@@ -629,7 +629,7 @@ print('Score:',roc_auc_score(y_test.values, LogisticRegression_Full_Estimator.pr
 
 ![image](https://user-images.githubusercontent.com/87689549/232224075-a6c16ef8-210f-4247-865a-645889758bbf.png)
 
-### Random Forest Classifier
+##### Random Forest Classifier
 ```python
 RandomForest_Full_Estimator = Pipeline([
                                         ("Feature_Engineering", FeatureUnionTransformer),
@@ -652,7 +652,7 @@ print('Score:',roc_auc_score(y_test.values, RandomForest_Full_Estimator.predict_
 ![image](https://user-images.githubusercontent.com/87689549/232224151-49a60b9c-ae90-496c-b7ba-21d138225af5.png)
 
 
-## Data Visual
+## 5.Data Visual
 
 ```python
 corr =  accidents.corr()
@@ -663,7 +663,7 @@ sns.heatmap(corr, cmap="flare")
 ![image](https://user-images.githubusercontent.com/87689549/232224887-e19e8c50-7d53-450e-a21e-2004626bf298.png)
 
 
-## Plotting the Dataframe
+#### Plotting the Dataframe
 ```python
 # assign the data
 fatal   = accidents.Accident_Severity.value_counts()['Fatal']
@@ -691,7 +691,7 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/87689549/232225045-31cecc5b-4070-418b-b665-dcb09398c4fb.png)
 
-## Creating the map for optimization
+#### Creating the map for optimization
 
 ```python
 most_crashes = df[['Latitude','Longitude']].value_counts().head(1000)
