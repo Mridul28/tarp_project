@@ -1,3 +1,4 @@
+Readme.md file link : [Readme.md](https://github.com/vinit1234singh/tarp_project/blob/main/README.md)
 <br/>
 <p align="center">
   <a href="https://github.com/vinit1234singh/tarp_project">
@@ -804,12 +805,6 @@ References
 
 10. Zhang, W., Huang, S., & Fan, W. (2021). Intelligent traffic density prediction using spatiotemporal deep learning. Neural Processing Letters, 53(2), 1307-1326. https://link.springer.com/article/10.1007/s11063-020-10448-1
 
-Contributors
-----------------
-
-<a href="https://github.com/vinit1234singh/tarp_project/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=vinit1234singh/tarp_project" />
-</a>
 
 
 
