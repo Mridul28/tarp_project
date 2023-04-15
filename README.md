@@ -4,9 +4,7 @@
     <img src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc.png" alt="Logo"  height="200">
   </a>
   <h3 align="center">CSE1901 : Technical Answers for Real World Problems (TARP) </h3>
-  <h4 align="center"><i>Winter Semester 2022-23</i></h4><br><br>
- <br>
-
+  <h4 align="center"><i>Winter Semester 2022-23</i></h4><br>
 <h6>Title : </h6>
 
 <h1 align="center" style="color:red">Optimizing Routes for Road Safety using<br> Traffic Density Analysis and Machine Learning</h1>
