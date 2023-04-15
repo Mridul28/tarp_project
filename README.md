@@ -113,6 +113,23 @@ Methodology
 Machine  learning methods  showed  great success  at  anomaly detection. In  this study, we have considered incidents in normal traffic flow as an anomaly. When accident happens, following cars will slow down or stop, and many cars will be affected from accident. When location data of vehicles are analyzed , it is seen that many cars are collected around accident location. Clustering algorithms can be used to group vehicles according to their speed and location in particular road segment. In accident case, algorithms will put vehicles which is affected by accident in one group, other vehicles in other group or groups.  In our simulations , it has been observed that number of group is increased by 1 at the time of accident and number of vehicles in the new group increased in the following seconds. It can be interpreted as an accident happened and following cars or  cars around  the accident are affected by the accident.
 <br>
 
+Proposed methodology for optimizing routes for road safety using traffic density analysis and machine learning:
+
+1. Data collection: Traffic data will be collected using sensors, cameras, and other devices placed on the roads. The data will include information about traffic volume, speed, and congestion levels.
+
+2. Data processing and analysis: The collected traffic data will be processed and analyzed to identify patterns and trends that can be used to predict traffic conditions and safety risks. This analysis will include identifying areas of high traffic density that are associated with higher accident rates and other factors that impact road safety.
+
+3. Machine learning algorithm selection: Machine learning algorithms, such as supervised and unsupervised learning, will be selected based on the specific research question and the type of data being analyzed. The algorithms can be used to identify patterns in the data that are associated with safety risks.
+
+4. Model training and validation: Once the machine learning algorithms have been selected, the models will be trained and validated using the traffic data collected in step 1. The performance of the models will be evaluated using statistical metrics such as accuracy and precision.
+
+5. Route optimization: The safest routes for drivers, cyclists, and pedestrians will be identified using the trained machine learning models. These routes can be optimized for safety by implementing measures such as traffic calming, speed limits, and road markings.
+
+6. Implementation and evaluation: The measures identified in step 5 will be implemented and evaluated for their effectiveness in improving road safety. This evaluation may involve collecting additional data and using statistical analysis to measure changes in safety outcomes, such as accident rates.
+
+7. Continuous improvement: The methodology will be continuously reviewed and improved based on new data and feedback from stakeholders, such as transportation agencies, local governments, and the public. This will ensure that the approach to optimizing routes for road safety remains relevant and effective over time.
+
+
 ![architcture diagram](https://user-images.githubusercontent.com/87689549/226840169-32f7a4cd-5c35-4a2e-9d79-e67b9333b225.PNG)
 
 Tools Used
@@ -217,8 +234,9 @@ Scalability: MySQL is designed to handle large volumes of data, making it a good
 
 
 
-## Implementation
--------------------
+Implementation
+-----------------------
+
 ### 1. Introduction
 The data come from the Open Data website of the UK government, where they have been published by the Department of Transport.
 
