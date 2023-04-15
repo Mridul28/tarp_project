@@ -392,6 +392,156 @@ Median: 1598.0
 
 ![image](https://user-images.githubusercontent.com/87689549/232222317-8e629bc1-2a33-4243-8871-bd49a79c3a83.png)
 
+#### 2.5 Create a new dataframe
+###### with only the features we need and want, 25 features overall
+```python
+df2 = df[['Accident_Index', '1st_Road_Class','Day_of_Week', 'Junction_Detail','Light_Conditions', 'Number_of_Casualties',
+          'Number_of_Vehicles', 'Road_Surface_Conditions', 'Road_Type', 'Special_Conditions_at_Site', 'Speed_limit',
+          'Time', 'Urban_or_Rural_Area', 'Weather_Conditions', 'Age_Band_of_Driver', 'Age_of_Vehicle',
+          'Hit_Object_in_Carriageway', 'Hit_Object_off_Carriageway', 'make', 'Engine_Capacity_.CC.', 'Sex_of_Driver',
+          'Skidding_and_Overturning', 'Vehicle_Manoeuvre', 'Vehicle_Type', 'Accident_Severity'
+         ]]
+```
+##### Correlation matrix
+```python
+plt.figure(figsize=(9,5))
+sns.heatmap(df2.corr(),linewidths=.5,cmap="YlGnBu")
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232222890-4f86205a-d6f2-417d-b4fb-f5e4db7789b0.png)
+
+##### Number of vehicles distribution****
+
+```python
+plt.figure(figsize=(14,5))
+sns.distplot(df2.Number_of_Vehicles).set_xlim(0,20)
+print('Min:',    df2.Number_of_Vehicles.min(), '\n'
+      'Max:',    df2.Number_of_Vehicles.max(), '\n'
+      'Median:', df2.Number_of_Vehicles.median())
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232222986-226d384e-fc40-49df-b859-5b54b0643dd5.png)
+
+##### Number of casualties distribution****
+```python
+plt.figure(figsize=(14,5))
+sns.distplot(df2.Number_of_Casualties).set_xlim(0,20)
+print('Min:',    df2.Number_of_Casualties.min(), '\n'
+      'Max:',    df2.Number_of_Casualties.max(), '\n'
+      'Median:', df2.Number_of_Casualties.median())
+```
+![image](https://user-images.githubusercontent.com/87689549/232223061-48c8847e-4927-4b36-89da-10fba546ca58.png)
+
+##### From multiclass to two-classes
+```python
+df2['Accident_Severity'] = df2['Accident_Severity'].replace(['Serious', 'Fatal'], 'Serious or Fatal')
+df2 = pd.get_dummies(df2, columns=['Accident_Severity'])
+df2 = df2.drop('Accident_Severity_Serious or Fatal', axis=1)
+df2.Accident_Severity_Slight.value_counts(normalize=True)
+plt.figure(figsize=(14,5))
+acc_slight = df2.Accident_Severity_Slight == 1
+acc_severe = df2.Accident_Severity_Slight == 0
+
+sns.kdeplot(df2.Number_of_Casualties[acc_slight],shade=True,color='Blue', label='Slight').set_xlim(0,20)
+sns.kdeplot(df2.Number_of_Casualties[acc_severe],shade=True,color='Red', label='Severe').set_xlim(0,20)
+
+plt.title('Number of Casualties dist by accident severity')
+plt.show()
+
+#print("we can see distribution between failed (under 2000), and successful (bigger the 2000)")
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232223153-729ee5b8-edb8-4a1c-92d9-a9c02a0c8662.png)
+
+###  3. Training/Predicting Pipeline
+Transform Speed Limit
+Transform Time
+Transform Age of Vehicle
+Transform Make
+Transform Engine Capacity
+Data To OneHot Transformer On Columns
+Feature Union
+
+```python
+def get_Speed_limit(df):
+    return df[['Speed_limit']]
+
+FullTransformerOnSpeedLimit = Pipeline([("Select_Speed_Limit", FunctionTransformer(func=get_Speed_limit, validate=False)),
+                                        ("Fill_Null",          SimpleImputer(missing_values=np.nan, strategy='most_frequent')),
+                                        ("One_Hot_Encoder",    OneHotEncoder(sparse = False, handle_unknown='ignore'))
+                                       ])
+
+def get_Time(df):
+    return pd.to_datetime(df['Time'], format='%H:%M').dt.time
+
+def find_time_group(time_object):
+    if time_object<pd.datetime.time(pd.datetime(2000,1,1,5,0)):
+        return 'Night'
+    elif time_object<pd.datetime.time(pd.datetime(2000,1,1,7,0)):
+        return 'Early Morning'
+    elif time_object<pd.datetime.time(pd.datetime(2000,1,1,10,0)):
+        return 'Morning'
+    elif time_object<pd.datetime.time(pd.datetime(2000,1,1,15,0)):
+        return 'Midday'
+    elif time_object<pd.datetime.time(pd.datetime(2000,1,1,18,0)):
+        return 'Afternoon'
+    elif time_object<pd.datetime.time(pd.datetime(2000,1,1,20,0)):
+        return 'Evening'
+    elif time_object<=pd.datetime.time(pd.datetime(2000,1,1,23,59)):
+        return 'Late Evening'
+    return np.nan
+
+FullTransformerOnTime = Pipeline([("Select_Time",     FunctionTransformer(func=get_Time, validate=False)),
+                                  ("Group_Time",      FunctionTransformer(func=lambda x: x.apply(find_time_group).to_frame(), validate=False)),
+                                  ("Fill_Null",       SimpleImputer(missing_values=np.nan, strategy='most_frequent')),
+                                  ("One_Hot_Encoder", OneHotEncoder(sparse = False, handle_unknown='ignore'))
+                                 ])
+
+#FullTransformerOnTime.fit_transform(X[:5000], y[:5000])
+def get_Age_of_Vehicle(df):
+    return df[['Age_of_Vehicle']]
+
+FullTransformerOnAgeofVehicle = Pipeline([("Select_Age_of_Vehicle", FunctionTransformer(func=get_Age_of_Vehicle, validate=False)),
+                                          ("Fill_Null",             SimpleImputer(missing_values=np.nan, strategy='median'))
+                                         ])
+
+#FullTransformerOnAgeofVehicle.fit_transform(X[:5000], y[:5000])
+def get_make(df):
+    list_of_small_makers = list(df['make'].value_counts()[df['make'].value_counts() < 2000].index)
+    return df['make'].replace(list_of_small_makers, 'Other').to_frame()
+
+FullTransformerOnMake = Pipeline([("Select_Make",      FunctionTransformer(func=get_make, validate=False)),
+                                   ("Fill_Null",       SimpleImputer(missing_values=np.nan, strategy='constant', fill_value='Other')),
+                                   ("One_Hot_Encoder", OneHotEncoder(sparse = False, handle_unknown='ignore'))])
+
+#FullTransformerOnMake.fit_transform(X[:5000], y[:5000])
+def get_Engine_Capacity(df):
+    return df[['Engine_Capacity_.CC.']]
+
+FullTransformerOnEngineCapacity = Pipeline([("Select_Engine_Capacity",       FunctionTransformer(func=get_Engine_Capacity, validate=False)),
+                                            ("Fill_Null",                    SimpleImputer(missing_values=np.nan, strategy='most_frequent')),
+                                            ("Car_Types_by_Engine_Capacity", KBinsDiscretizer(n_bins=7, encode='ordinal', strategy='quantile')),
+                                            ("One_Hot_Encoder",              OneHotEncoder(sparse = False, handle_unknown='ignore'))
+                                           ])
+
+#FullTransformerOnEngineCapacity.fit_transform(X[:5000], y[:5000])
+#FullTransformerOnEngineCapacity.named_steps["Car_Types_by_Engine_Capacity"].bin_edges_[0]
+def get_columns_to_one_hot(df):
+    return df[['1st_Road_Class', 'Day_of_Week', 'Junction_Detail', 'Light_Conditions', 'Number_of_Casualties', 
+               'Number_of_Vehicles', 'Road_Surface_Conditions', 'Road_Type', 'Special_Conditions_at_Site', 
+               'Urban_or_Rural_Area', 'Weather_Conditions', 'Age_Band_of_Driver', 'Hit_Object_in_Carriageway',
+               'Hit_Object_off_Carriageway', 'Sex_of_Driver', 'Skidding_and_Overturning',
+               'Vehicle_Manoeuvre', 'Vehicle_Type'
+              ]]
+
+DataToOneHotTransformerOnColumns = Pipeline([("Select_Columns",  FunctionTransformer(func=get_columns_to_one_hot, validate=False)),
+                                             ("One_Hot_Encoder", OneHotEncoder(sparse = False, handle_unknown='ignore'))])
+
+#DataToOneHotTransformerOnColumns.fit_transform(X[:5000], y[:5000])
+```
+
+
 
 
 ## Evaluation Metrics:
