@@ -218,6 +218,7 @@ Scalability: MySQL is designed to handle large volumes of data, making it a good
 
 
 ## Implementation
+-------------------
 ### 1. Introduction
 The data come from the Open Data website of the UK government, where they have been published by the Department of Transport.
 
@@ -541,6 +542,88 @@ DataToOneHotTransformerOnColumns = Pipeline([("Select_Columns",  FunctionTransfo
 #DataToOneHotTransformerOnColumns.fit_transform(X[:5000], y[:5000])
 ```
 
+###  4. Prediction and submission
+```python
+X_train, X_test, y_train, y_test = split(X, y)
+```
+#### 4.1 Logistic Regression
+```python
+%%time
+
+clf = LogisticRegression(class_weight = "balanced")
+
+Full_Transformer.fit(X_train)
+X_train_transformed = Full_Transformer.transform(X_train)
+clf.fit(X_train_transformed, y_train)
+
+X_test_transformed = Full_Transformer.transform(X_test)
+
+y_pred = clf.predict(X_test_transformed)
+
+print('Classification Report:',classification_report(y_test, y_pred))
+
+print('Score:',roc_auc_score(y_test.values, clf.predict_proba(X_test_transformed)[:, 1]))
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232223929-94d9325b-d439-49f1-8446-2b391af45de5.png)
+
+#### 4.2 Random Forest Classifier
+```python
+%%time
+
+clf = RandomForestClassifier(n_estimators=100, n_jobs=3)
+
+Full_Transformer.fit(X_train)
+X_train_transformed = Full_Transformer.transform(X_train)
+clf.fit(X_train_transformed, y_train)
+
+X_test_transformed = Full_Transformer.transform(X_test)
+
+y_pred = clf.predict(X_test_transformed)
+
+print('Classification Report:',classification_report(y_test, y_pred))
+
+print('Score:',roc_auc_score(y_test.values, clf.predict_proba(X_test_transformed)[:, 1]))
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232223974-8fdc5c76-16f2-4cba-8c81-cf2d270232de.png)
+
+#### 4.3 Using the Full Estimator
+##### Logistic Regression
+```python
+LogisticRegression_Full_Estimator = Pipeline([
+                                              ("Feature_Engineering", FeatureUnionTransformer),
+                                              ("Min_Max_Transformer", MaxAbsScaler()),
+                                              ("Clf",                 LogisticRegression(class_weight = "balanced"))
+                                             ])
+
+#LogisticRegression_Full_Estimator.fit(X[:5000], y[:5000])
+%%time
+
+LogisticRegression_Full_Estimator.fit(X_train, y_train)
+LogisticRegression_Full_Estimator.predict(X_train)
+LogisticRegression_Full_Estimator.predict(X_test)
+
+print('Classification Report:' '\n',
+      classification_report(y_test, LogisticRegression_Full_Estimator.predict(X_test)))
+print('Score:',roc_auc_score(y_test.values, LogisticRegression_Full_Estimator.predict_proba(X_test)[:, 1]))
+```
+
+![image](https://user-images.githubusercontent.com/87689549/232224075-a6c16ef8-210f-4247-865a-645889758bbf.png)
+
+#RandomForest_Full_Estimator.fit(X[:5000], y[:5000])
+```python
+%%time
+
+RandomForest_Full_Estimator.fit(X_train, y_train)
+RandomForest_Full_Estimator.predict(X_train)
+RandomForest_Full_Estimator.predict(X_test)
+
+print('Classification Report:' '\n',
+      classification_report(y_test, RandomForest_Full_Estimator.predict(X_test)))
+print('Score:',roc_auc_score(y_test.values, RandomForest_Full_Estimator.predict_proba(X_test)[:, 1]))
+
+![image](https://user-images.githubusercontent.com/87689549/232224151-49a60b9c-ae90-496c-b7ba-21d138225af5.png)
 
 
 
