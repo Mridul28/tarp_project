@@ -5,26 +5,7 @@
   </a>
   <h3 align="center">CSE1901 : Technical Answers for Real World Problems (TARP) </h3>
   <h4 align="center"><i>Winter Semester 2022-23</i></h4><br><br>
-  <p align="center">
-    <br/>
-    <a href="https://github.com/vinit1234singh/tarp_project"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://github.com/vinit1234singh/tarp_project">View Demo</a>
-    .
-    <a href="https://github.com/vinit1234singh/tarp_project/issues">Report Bug</a>
-    .
-    <a href="https://github.com/vinit1234singh/tarp_project/issues">Request Feature</a>
-  </p>
-</p>
-
-[![GitHub release](https://img.shields.io/github/release/vinit1234singh/tarp_project?include_prereleases=&sort=semver&color=blue)](https://github.com/vinit1234singh/tarp_project/releases/)
-[![License](https://img.shields.io/badge/License-VIT-blue)](#license)
-[![issues - tarp_project](https://img.shields.io/github/issues/vinit1234singh/tarp_project)](https://github.com/vinit1234singh/tarp_project/issues)
-![Contributors](https://img.shields.io/github/contributors/vinit1234singh/tarp_project?color=dark-green)
-
-
-</p><br><br>
+ <br>
 
 <h6>Title : </h6>
 
