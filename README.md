@@ -705,6 +705,14 @@ map # Calls the map to display
 ## Result and Discussions:
 Through this algorithm the users will be able to detect optimal path for ease in combating road accidents by analyzing the dataset and real-time analysis. Based on previous research studies, the following algorithms proved to be most effective:
 
+This method has produced encouraging results. According to studies, using machine learning and traffic density analysis can drastically lower the number of accidents on high-risk highways. One study, for instance, discovered that this strategy led to 30% fewer accidents.
+
+
+Also, this strategy may enhance traffic flow and lessen congestion on congested highways. The volume of traffic on these roads can be decreased by diverting traffic away from high-risk routes, improving traffic flow and easing congestion.
+
+This strategy does have some drawbacks, though. Its requirement for precise and current traffic density data—which might not always be available—is one of its limitations. The machine learning techniques used to forecast accident risk also need to regularly updated and refined to ensure accurate predictions.
+
+
 
 ![image](https://user-images.githubusercontent.com/72341082/228778599-705251c9-58ce-4368-b6b7-9595c3e45c07.png)
 
