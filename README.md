@@ -217,6 +217,74 @@ Scalability: MySQL is designed to handle large volumes of data, making it a good
 
 
 
+##Implementation
+###1. Introduction
+The data come from the Open Data website of the UK government, where they have been published by the Department of Transport.
+
+The dataset comprises of two csv files:
+
+- Accident_Information.csv: every line in the file represents a unique traffic accident (identified by the Accident_Index column), featuring various properties related to the accident as columns. Date range: 2005-2017
+- Vehicle_Information.csv: every line in the file represents the involvement of a unique vehicle in a unique traffic accident, featuring various vehicle and passenger properties as columns. Date range: 2004-2016
+
+Our target is to predict the accident severity. The severity is devided to two catagories; severe and slight.
+We had more than 2 million observations and close to 60 features. So, we sampled the data into about 600K observations and 23 features.
+Two models were selected - **Logistic Regression and the Random Forest Classifier.**
+
+This Python 3 environment comes with many helpful analytics libraries installed
+
+It is defined by the kaggle/python docker image: https://github.com/kaggle/docker-python
+For example, here's several helpful packages to load in 
+
+```python
+import numpy as np                          # linear algebra
+import pandas as pd                         # data processing, CSV file I/O (e.g. pd.read_csv)
+from datetime import datetime as dt
+import time
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split as split
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
+from sklearn.linear_model import LogisticRegression
+from pandas.tools.plotting import scatter_matrix
+import warnings
+from sklearn.metrics import roc_auc_score
+from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.preprocessing import MinMaxScaler, FunctionTransformer, OneHotEncoder, KBinsDiscretizer, MaxAbsScaler
+from sklearn.feature_selection import VarianceThreshold
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.impute import SimpleImputer
+import seaborn as sns
+sns.set()
+import math
+warnings.filterwarnings('ignore')
+%matplotlib inline
+```
+
+Input data files are available in the "../input/" directory.
+
+For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
+```python
+import os
+print(os.listdir("../input"))
+```
+
+###2. Data Preparation
+####2.1 Load Data
+
+```python
+#Load Data and encode to latin
+acc = pd.read_csv('C:/Users/digit/Downloads/data/Accident_Information.csv', encoding = 'latin')
+veh = pd.read_csv('C:/Users/digit/Downloads/data/Vehicle_Information.csv', encoding = 'latin')
+
+# Merging two data sets into one with inner join by index
+df = pd.merge(veh, acc, how = 'inner', on = 'Accident_Index')
+
+#Check data sample
+print(df.shape)
+df.head()
+```
+
+
+
 ## Evaluation Metrics:
 Through this algorithm the users will be able to detect optimal path for ease in combating road accidents by analyzing the dataset and real-time analysis. Based on previous research studies, the following algorithms proved to be most effective:
 
