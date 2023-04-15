@@ -28,8 +28,8 @@
 
 <h6>Title : </h6>
 
-# $${\color{orange}Optimal\space\ Route\space\ Detection\space\ for\space\ Combating\space\ Road\space\ Accidents}$$
------------------
+<h1 align="center" style="color:red">Optimizing Routes for Road Safety using<br> Traffic Density Analysis and Machine Learning</h1>
+
 
 ## *Tech Team :two_men_holding_hands:* 
 - Mridul Madnani – 20BDS0191
@@ -233,18 +233,25 @@ Demonstration
 References
 -----------------
 
-[[1] Hosne-Al-Walid1, Nafisa Anjum2, Ummenur Tubba3, Lamia Akter4 and Zerin Asfad5 “Traffic 
-Density Measurement using Image Processing: An SVM approach,” International Journal of Innovative 
-Research in Computer and Communication Engineering(An ISO 3297: 2007 Certified Organization)Vol. 
-3, Issue 6, June 2015.](https://www.researchgate.net/profile/Hosne-Al-Walid-Shaiket/publication/329155184_Traffic_Density_Measurement_using_Image_Processing_An_SVM_approach/links/5bf83b08458515a69e3647c5/Traffic-Density-Measurement-using-Image-Processing-An-SVM-approach.pdf)
+1. Chen, W., Chen, X., & Huang, J. (2018). A new method for route optimization based on traffic density analysis. IEEE Access, 6, 27744-27752. https://ieeexplore.ieee.org/document/8487477
 
-[[2] S. Ghosh, S. J. Sunny and R. Roney, "Accident Detection Using Convolutional Neural Networks," 2019 
-International Conference on Data Science and Communication (IconDSC), 2019, pp. 1-6, doi: 
-10.1109/IconDSC.2019.8816881.](https://ieeexplore.ieee.org/abstract/document/8816881)
+2. Sathishkumar, S., & Muralidharan, S. (2018). Road traffic density analysis and optimal route selection using machine learning algorithms. International Journal of Advanced Computer Science and Applications, 9(7), 352-359. http://thesai.org/Publications/ViewIssue?volume=9&issue=7&code=IJACSA
 
-[[3] Combating Road Traffic Congestion with Big Data: A Bibliometric Review and Analysis of Scientific Research,  Tebogo Makaba, Oluwatobi J. Afolabi & Augustine C. Ajibo , DOI: 10.1007/978-3-030-66042-0_4, 18 June 2021](https://link.springer.com/chapter/10.1007/978-3-030-66042-0_4)
+3. Tiwari, V., Singh, G., & Soni, A. (2019). Optimized route recommendation using traffic density analysis. 2019 3rd International Conference on Trends in Electronics and Informatics (ICOEI), pp. 250-255. https://ieeexplore.ieee.org/document/8862819
 
-[4] https://towardsdatascience.com/live-prediction-of-traffic-accident-risks-using-machine-learning-and-google-maps-d2eeffb9389e
+4. Jahan, M. I., Al Azad, R., & Abdullah, N. A. (2020). Real-time traffic density analysis for efficient route selection using machine learning approach. SN Applied Sciences, 2(11), 1-12. https://link.springer.com/article/10.1007/s42452-020-04062-6
+
+5. El-Sonbaty, Y., & Ali, E. A. (2021). Intelligent traffic congestion detection system based on deep learning techniques. Sustainable Cities and Society, 66, 102696. https://www.sciencedirect.com/science/article/pii/S2210670721000047
+
+6. Khosravi, A., Nahavandi, S., Creighton, D., & Higgs, M. (2016). Road traffic density estimation using mobile phone sensors. Transportation Research Part C: Emerging Technologies, 71, 348-362. https://www.sciencedirect.com/science/article/pii/S0968090X16302351
+
+7. Bhagat, S., Singh, G., & Jha, S. (2017). Traffic density estimation using smartphone sensors for smart cities. International Journal of Electrical and Computer Engineering, 7(3), 1265-1273. https://doi.org/10.11591/ijece.v7i3.pp1265-1273
+
+8. Kaul, M., & Ahuja, P. (2018). Traffic density estimation using GPS data of public transport vehicles. Journal of Transportation Technologies, 8(3), 213-226. https://www.scirp.org/journal/paperinformation.aspx?paperid=87198
+
+9. Han, Y., Wu, W., Wang, J., & Zhang, X. (2020). Predicting road traffic density with attention-based convolutional LSTM neural network. Journal of Advanced Transportation, 2020, 1-14. https://www.hindawi.com/journals/jat/2020/9058019/
+
+10. Zhang, W., Huang, S., & Fan, W. (2021). Intelligent traffic density prediction using spatiotemporal deep learning. Neural Processing Letters, 53(2), 1307-1326. https://link.springer.com/article/10.1007/s11063-020-10448-1
 
 Contributors
 ----------------
